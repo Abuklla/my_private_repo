@@ -1,0 +1,173 @@
+.board{
+  height: 416px;
+  width:416px;
+  /* background-color: grey; */
+  background-image: url(images/wood.JPG);
+  
+  background-size: cover;
+
+}
+.row{
+  height: 52px;
+  width: 416px;
+  display:flex;
+}
+.column{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 1px solid #00000036;
+}
+.boardBlack{
+  background-color: #584b309c
+}
+.boardWhite{
+  background-color: #d0ca68c4
+}
+.white{
+  color: #fff;
+}
+.black{
+  color: #000
+}
+.piece{
+  text-align: center;
+  height: 100%;
+  line-height: 3;
+  cursor: pointer;
+}
+.highlight{
+  background-color: #35ee077a;
+}
+.highlightRed{
+  background-color: #dd0d297a;
+}
+.highlightBlue{
+  background-color: #4826c57a;
+}
+.pieceImg{
+  border-radius: 100%;
+  object-fit: cover;
+  margin-top: 2px;
+  height: 44px;
+
+}
+#mainArea{
+  display: -webkit-inline-box;
+  /* height: 436px;
+  width: 436px; */
+  height: 600px;
+  width: 600px;
+}
+
+#rotateButton{
+  height: 25px;
+  width: 25px;
+  background: #b1af54b0;
+  margin-left: 2px;
+  border-radius: 6px;
+  border: 1px solid #0a0a0a33;
+  cursor: pointer;
+}
+#rotateButton:hover{
+  height: 25px;
+  width: 25px;
+  background: #5a513d;
+  margin-left: 2px;
+  border-radius: 6px;
+  border: 1px solid #948d8db5;
+  cursor: pointer;
+}
+.rotate{
+  height: 18px;
+  padding: 3px;
+}
+.vertical{
+  height: 416px;
+  width: 20px;
+  display: unset;
+}
+.horizontal{
+  height: 20px;
+  width: 416px;
+  display: -webkit-inline-box;
+}
+#coordinatesv{
+  height: 416px;
+  width: 20px;
+  display:flex;
+ }
+ #coordinatesh{
+  height: 20px;
+  width: 416px;
+  display:flex;
+  position: absolute;
+  margin-top: 416px;
+ }
+ .coordboxesv{
+  height: 50px;
+  width: 18px;
+  background-color: #3b2720ed;
+  border: 1px solid #00000036;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  -webkit-text-fill-color: antiquewhite;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+.coordboxesh{
+  height: 18px;
+  width: 50px;
+  background-color: #3b2720ed;
+  border: 1px solid #00000036;
+  text-align: center;
+  -webkit-text-fill-color: antiquewhite;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+#pionfund{
+  height: 312px;
+  width: 50px;
+  display: initial;
+  position: absolute;
+  left: 444px;
+  top: 60px;
+}
+.newbox{
+  height: 52px;
+  width: 52px;
+  background: #f3f5738e;
+  margin-left: 2px;
+  border-radius: 6px;
+  border: 1px solid #948d8d5b;
+  cursor: pointer;
+}
+.newbox:hover{
+  height: 52px;
+  width: 52px;
+  background: #7a644b;
+  margin-left: 2px;
+  border-radius: 6px;
+  border: 1px solid #948d8d8f;
+  cursor: pointer;
+}
+
+
+
+/* per vizllimin */
+
+
+
+@keyframes glowing {
+  10% { box-shadow: 0 0 -10px #4dff36a4; }
+  30% { box-shadow: 0 0 20px #4cec74a4; }
+  60% { box-shadow: 0 0 20px #297e37a4; }
+  100% { box-shadow: 0 0 -10px #155f15a4; }
+}
+
+.button-glow {
+  animation: glowing 1400ms infinite;
+}
+
+
+
+/* per vizllimin end */

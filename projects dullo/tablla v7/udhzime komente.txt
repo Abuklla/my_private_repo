@@ -1,0 +1,403 @@
+((x==1*xd))||((x==2*xd)&&(x-xd==xd))||((x==3*xd)&&)||((x==4*xd)&&)
+
+
+ function condition(x){
+   x=parseInt(x); 
+  ((boardState[x].color == null)||
+   (boardState[x].color == color)|| 
+   ((boardState[x].color != color) && (boardState[x].number == 1)))
+
+
+for(var i = 1;i<=4; i++){
+	if((condition(x)==true) && (x=i*xd))
+---------------------------------------------------------------------------------
+function condition(x){
+   x=parseInt(x); 
+  ((boardState[x].color == null)||
+   (boardState[x].color == color)|| 
+   ((boardState[x].color != color) && (boardState[x].number == 1)))
+}
+
+
+
+
+var xz=parseInt( $("#dicesresult1").text());
+var xd=parseInt( $("#dicesresult1").text())+posx;
+
+if
+(((condition(x)==true) && (x=1*xd))    ||  
+ ((condition(x-xz)==true) && (x=xd+xz))   ||
+ ((condition(x-xz)==true) && (condition(x-2*xz)==true) && (x=xd+2*xz)))  ||   
+ ((condition(x-xz)==true) && (condition(x-2*xz)==true)&& (condition(x-3*xz)==true)&& (x=xd+3*xz)))
+{
+$('.pos'+x+'').addClass("highlight");
+
+
+
+
+
+
+
+ for(var i = 1;i<=length; i++){
+	if()
+	{
+	sdad
+	}
+     break;
+
+
+ }
+
+
+
+
+
+
+
+ function condition(x){
+        x=parseInt(x); 
+        // var color="white";
+      if(
+        (boardState[x].color == null)||
+        (boardState[x].color == color)|| 
+        ((boardState[x].color != color) && (boardState[x].number == 1))
+        )
+        return true;
+        
+      }
+     
+     ==============================
+     
+     
+     var xz=parseInt( $("#dicesresult1").text());
+     var xd=parseInt( $("#dicesresult1").text())+posx;
+     
+    //  if
+    //  (
+    //   ((condition(x)==true) && (x=1*xd))    ||  
+    //   ((condition(x-xz)==true) && (x=xd+xz))   ||
+    //   ((condition(x-xz)==true) && (condition(x-2*xz)==true) && (x=xd+2*xz))  ||   
+    //   ((condition(x-xz)==true) && (condition(x-2*xz)==true) && (condition(x-3*xz)==true) && (x=xd+3*xz))
+    // )
+    if((x=xd+(i-1)*xz)){
+      if(condition(x)==true){
+        $('.pos'+x+'').addClass("highlight");
+        console.log("hyn te kushti")
+      }
+      else{
+        break;
+      }
+      
+    }
+
+
+
+
+
+//funksioni qe kontrollon a ka ku mund te shkoje
+
+
+// var color=toMove;
+var x=1;
+var y=24;
+var controlla=0;
+function control(colori){
+
+
+
+
+	for(var j=1; j<=24; j++){
+	
+	
+	if(colori=="white"){
+		searchWhiteMoves(boardState[x], x)
+		if($(('.board').hasClass('highlight'))){controlla=controlla+1}
+		x+=1
+	}
+	else{
+		searchBlackMoves(boardState[y], y)
+		if($(('.board').hasClass('highlight'))){controlla=controlla+1}
+		y-=1
+	}
+	
+
+
+	if(controlla=="0"){
+			
+			 // e mxhallim dicen
+			$("#dices").css("background-color", "");
+ 			$("#dices").css({'pointer-events': 'auto'});
+			$("#dicesresult1").text(" ");
+ 			$("#dicesresult2").text(" ");
+			
+			//krijon perde
+			var bosh =""
+			bosh= '<div class="bosh">';
+			$('.board').append(bosh);
+		
+			}
+
+
+
+	}	
+
+
+}
+
+//funksioni qe kontrollon a ka ku mund te shkoje end
+
+
+
+
+
+
+
+
+
+
+
+//funksioni qe kontrollon a ka ku mund te shkoje 222
+
+
+// var color=toMove;
+var x=1;
+var y=24;
+var controlla=0;
+function control(colori){
+
+
+
+
+	for(var j=1; j<=24; j++){
+	
+	
+	if(colori=="white"){
+		searchWhiteMoves(boardState[x], x)
+		if(flag==true){controlla=controlla+1}
+		x+=1
+	}
+	else{
+		searchBlackMoves(boardState[y], y)
+		if(flag==true){controlla=controlla+1}
+		y-=1
+	}
+	
+
+
+	if(controlla=="0"){
+			
+			 // e mxhallim dicen
+			$("#dices").css("background-color", "");
+ 			$("#dices").css({'pointer-events': 'auto'});
+			$("#dicesresult1").text(" ");
+ 			$("#dicesresult2").text(" ");
+			
+			//krijon perde
+			var bosh =""
+			bosh= '<div class="bosh">';
+			$('.board').append(bosh);
+		
+			}
+
+
+
+	}	
+
+
+}
+
+//funksioni qe kontrollon a ka ku mund te shkoje end
+
+
+
+
+
+//funksioni qe kontrollon a ka ku mund te shkoje 333 (punon)
+
+
+// var color=toMove;
+var x=1;
+var y=24;
+var controlla=0;
+function control(colori){
+
+
+  controlla=0;
+
+	for(var j=1; j<=24; j++){
+	
+	
+	if(colori=="white"){if(boardState[x].color=="white"){
+		searchWhiteMoves(boardState[x], x)
+    if(flag==true){controlla=controlla+1}
+  }
+		x+=1
+	}
+	else{if(boardState[x].color=="black"){
+    searchBlackMoves(boardState[y], y)
+		if(flag==true){controlla=controlla+1}
+  }
+		
+		y-=1
+	}
+  
+  
+}
+console.log("hin")
+
+	if(controlla=="0"){
+
+ // e ndrojm rendin
+    if(toMove =="white"){
+      toMove = "black"
+    }else{
+      toMove = "white"
+    }
+			
+			 // e mxhallim dicen
+			$("#dices").css("background-color", "");
+ 			$("#dices").css({'pointer-events': 'auto'});
+			$("#dicesresult1").text(" ");
+ 			$("#dicesresult2").text(" ");
+			
+			//krijon perde
+			var bosh =""
+			bosh= '<div class="bosh">';
+			$('.board').append(bosh);
+		
+			
+
+
+
+	}	
+
+
+}
+
+//funksioni qe kontrollon a ka ku mund te shkoje end
+
+
+
+=================================================================================================================
+
+
+
+
+
+
+
+//funksioni qe kontrollon a duhet tmare prej tabele (fundi)
+
+
+function readytoTake(){
+
+var sumWhite=0;
+var sumBlack=0;
+
+
+if(toMove=="white"){
+
+  for(var i = 1;i<=6; i++){
+	if(boardState[i].color=="white"){
+	sumWhite=sumWhite+ parseInt(boardState[i].number)
+	}
+  }
+
+if(sumWhite==15){return true}
+
+}else{
+
+ for(var i = 19;i<=24; i++){
+	if(boardState[i].color=="black"){
+	sumBlack=sumBlack+ parseInt(boardState[i].number)
+	}
+  }
+if(sumBlack==15){return true}
+
+}
+
+
+
+}
+
+//funksioni qe kontrollon a duhet tmare prej tabele (fundi) end
+
+
+
+
+//keto jepen te searchPossible moves
+
+var d1=parseInt( $("#dicesresult1").text());
+var d2=parseInt( $("#dicesresult2").text());
+
+if(readytoTake()==true){
+searchtoTake(d1,d2)
+}
+
+//keto jepen te searchPossible moves end
+
+
+
+
+//funksioni search a mund ta marrrish
+
+function searchtoTake(dice1, dice2){
+
+dice1=parseInt(dice1);
+dice2=parseInt(dice2);
+
+
+if(toMove=="white"){
+
+for(var i = 1;i<=6; i++){
+
+	if((i==d1)||(i=d2)){
+
+	$('#'+i+'blue').addClass("highlightBlue2");
+
+	}
+
+
+
+}
+
+
+}else{
+
+for(var i = 7;i<=12; i++){
+
+	if((13-i==d1)||(13-i=d2)){
+
+	$('#'+i+'blue').addClass("highlightBlue2");
+
+	}
+
+
+
+}
+
+
+}
+
+
+
+}
+
+
+//funksioni search a mund ta marrrish end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
